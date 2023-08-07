@@ -19,7 +19,7 @@ public class activity {
 		System.out.println("Por favor, digite sua altura: ");
 		altura = leia.nextDouble();
 		System.out.println("Qual o sexo (m/f): ");
-		sexo = leia.next().charAt(0);s
+		sexo = leia.next().charAt(0);
 
 		 System.out.println("\nO nome digitado foi: " + nome);
 		 System.out.println("A idade digitada foi: " + idade);
