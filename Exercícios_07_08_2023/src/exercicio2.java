@@ -15,9 +15,9 @@ public class exercicio2 {
             
 			
             if(numero%2 == decimal) {
-			System.out.println("O número é par");
+			System.out.println(numero + " é par");
 	        }else {
-	        System.out.println("O é impar!");}
+	        System.out.println(numero + " é impar!");}
 	    	
 	}
 

@@ -3,7 +3,22 @@ package principal;
 public class PrintfEOperadores {
 	
 	public static void main(String[]   args) {
-	
+		/*operadores de comparação
+		 * >maior que
+		 * <menor que
+		 * >=maior ou igual a
+		 * <=menor ou igual a
+		 * !=diferente
+		 * ==igual
+		 */
+		
+		/*operadores lógicos
+		 * && significa E
+		 * || significa OU
+		 * ! significa Negação
+		 */
+		
+		//se ==if
 	String nome = "Rafaelson";
 	int idade = 23;
 	double altura = 1.8;
@@ -13,22 +28,7 @@ public class PrintfEOperadores {
 	
 	System.out.printf(" %s, tem %d, e sua altura é: %.2f\n", nome, idade, altura);
 	
-	/*operadores de comparação
-	 * >maior que
-	 * <menor que
-	 * >=maior ou igual a
-	 * <=menor ou igual a
-	 * !=diferente
-	 * ==igual
-	 */
-	
-	/*operadores lógicos
-	 * && significa E
-	 * || significa OU
-	 * ! significa Negação
-	 */
-	
-	//se ==if
+
 	if(verdadeiro || falso) {
 		System.out.println(10);
 	}else {
