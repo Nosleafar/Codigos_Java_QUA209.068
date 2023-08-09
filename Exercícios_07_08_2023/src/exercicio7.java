@@ -22,12 +22,16 @@ public class exercicio7 {
         
         if (media == 10) {
             System.out.println("Aprovado com honras!");
-        } else if (media > 7) {
+        } else if (media > 7 && media < 10) {
             System.out.println("Aprovado");
         } else if (media >= 6 && media < 7) {
             System.out.println("Recuperação");
+        }else if (media > 10) {
+        	System.out.println("Você digitou algum valor incorreto!");
         } else {
             System.out.println("Reprovado");
+            
+            leia.close();
         }
     }
 }
