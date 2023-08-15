@@ -1,50 +1,55 @@
 package principal;
 
 import java.util.Scanner;
-
-public class exercicio3 {
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner (System.in);
-		
-		//Faça um programa que receba o salario e a quantidade de venda total que o vendedor fez
-		//no mes, e calcule o salario do mês. Há também o desconto de 5% de inss e 11% de IRPF
+			
+				
+		//FaÃ§a um programa que receba o salario e a quantidade de venda total que o vendedor fez
+		//no mes, e calcule o salario do mÃªs. HÃ¡ tambÃ©m o desconto de 5% de inss e 11% de IRPF
 		//sobre o salario bruto.
 
-		//Se o vendedor possui o total de venda acima de 20 mil no mês, ele recebe uma bonificação
+		//Se o vendedor possui o total de venda acima de 20 mil no mÃªs, ele recebe uma bonificaÃ§Ã£o
 		//de 5% sobre o valor das vendas;
 
-		//Se o vendedor possui o total de venda entre 15 e 20 mil reais, recebe uma bonificação de
+		//Se o vendedor possui o total de venda entre 15 e 20 mil reais, recebe uma bonificaÃ§Ã£o de
 		//3% no valor da venda;
 
-		//Se o vendedor possui o total de venda entre 10 e 15 mil reais, recebe uma bonificação de
+		//Se o vendedor possui o total de venda entre 10 e 15 mil reais, recebe uma bonificaÃ§Ã£o de
 		//1% no valor da venda;
 
-		//Se o valor não passar de 10 mil, imprima uma frase motivacional;
+		//Se o valor nÃ£o passar de 10 mil, imprima uma frase motivacional;
 
-		
-	System.out.println("Digite o valor do seu Salário: ");
-	double salario = sc.nextDouble();
-	System.out.println("Agora, digite o valor total das vendas: ");
-	double venda = sc.nextDouble();
-	
-			if (venda>20000) {
-				System.out.printf("Parabéns, o seu salário foi de: %.2 reais ", reais(salario,venda));
-			}else if(venda>15000 && venda<20000) { 
-				System.out.printf("Parabéns, o seu salário foi de:  %.2 reais", reais(salario,venda));
-			}else if (venda>10000&&venda<15000) {
-			System.out.printf("Parabéns, o seu salário foi de:  %.2 reais", reais(salario,venda));
-			}else{
-			}System.out.println("Parabéns pelos resultados obtidos, continue se empenhando");
-			
-		
-		sc.close();
-	}
-		
-	static double reais(double salario, double venda) {
-		return salario+ venda;
-		
-		
-	}
 
+public class atividade {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o salÃ¡rio base: ");
+        double salarioBase = scanner.nextDouble();
+
+        System.out.print("Digite a quantidade de vendas total no mÃªs: ");
+        double vendasTotal = scanner.nextDouble();
+
+        double bonificacao = 0;
+        if (vendasTotal > 20000) {
+            bonificacao = vendasTotal * 0.05;
+        } else if (vendasTotal >= 15000 && vendasTotal <= 20000) {
+            bonificacao = vendasTotal * 0.03;
+        } else if (vendasTotal >= 10000 && vendasTotal < 15000) {
+            bonificacao = vendasTotal * 0.01;
+        } else {
+            System.out.println("Continue se esforÃ§ando! VocÃª vai fazer melhor no prÃ³ximo mÃªs!");
+        }
+
+        double salarioBruto = salarioBase + bonificacao;
+        double inss = salarioBruto * 0.05;
+        double irpf = salarioBruto * 0.11;
+        double salarioLiquido = salarioBruto - inss - irpf;
+
+        System.out.println("SalÃ¡rio Bruto: " + salarioBruto);
+        System.out.println("Desconto INSS: " + inss);
+        System.out.println("Desconto IRPF: " + irpf);
+        System.out.println("SalÃ¡rio LÃ­quido: " + salarioLiquido);
+
+        scanner.close();
+    }
 }
