@@ -15,7 +15,7 @@ public class Program {
 		System.out.println("Agora, digite o ano que " + nome + " nasceu: ");
 		idade.nascimento = sc.nextDouble();
 		
-		idade.idadeAtual(); // Calcula a idade com base no ano de nascimento
+		idade.idadeAtual(); 
 		
 		System.out.println("A idade de " + nome + " é de: " + idade.idade);
 	}
