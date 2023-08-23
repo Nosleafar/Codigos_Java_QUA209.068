@@ -1,6 +1,6 @@
 package entities;
 
-public class Chefia  extends FuncionarioeChefia{
+public class Chefia  extends Funcionario{
 
 	
 	@Override

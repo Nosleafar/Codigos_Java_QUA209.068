@@ -2,14 +2,15 @@ package Principal;
 
 		import java.util.Scanner;
 		import entities.Chefia;
-		import entities.FuncionarioeChefia;
+import entities.Funcionario;
+import entities.FuncionarioeChefia;
 
 		public class Program {
 
 			public static void main(String[] args) {
 			
-				FuncionarioeChefia funcionario = new FuncionarioeChefia();
-				FuncionarioeChefia gerente = new Chefia();
+				Funcionario funcionario = new Funcionario();
+				Funcionario gerente = new Chefia();
 				
 				
 				funcionario.setNome("Rafaelson");
