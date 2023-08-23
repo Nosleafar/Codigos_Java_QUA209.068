@@ -51,10 +51,9 @@ public class Dados {
         System.out.println("Funcionário: " + funcionario);
         System.out.println("Idade: " + idade);
         System.out.println("Cargo: " + cargo);
-        System.out.println("Salário: " + salario);
         
         if (cargo.equals("DIRETOR") || cargo.equals("PRESIDENTE") || cargo.equals("ENCARREGADO")) {
-            System.out.println("Salário com Bônus: " + (salario + getBonus()));
+            System.out.println("Salario: " + salario + "\n" + "Salário com Bônus: " + (salario + getBonus()));
         } else {
             System.out.println("Salário: " + salario);
         }
