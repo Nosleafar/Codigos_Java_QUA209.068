@@ -1,27 +1,34 @@
 package principal;
 
 import java.util.Scanner;
-import entities.email;
 
-public class Exercicio3 {
+import entities.Usuario;
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        email email = new email();
-        System.out.println("Digite seu email: ");
-        email.setEmail(sc.nextLine());
-        
-        System.out.println("Agora, digite sua senha: ");
-        email.setSenha(sc.nextLine());
+public class ProgramUsuario {
 
-        if (!email.getSenha().equals("1234")) {
-            System.out.println("Senha incorreta, digite novamente");
-        } else {
-            System.out.println("Agora você tem acesso ao seu email");
-        }
+	public static void main(String[] args) {
+		
+		Usuario usuario = new Usuario();
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("Entre com o nome do usuÃ¡rio: ");
+		usuario.setNome(sc.nextLine());
+		
+		System.out.println("Entre com o e-mail: ");
+		usuario.setE_mail(sc.nextLine());
+		
+		System.out.println("Cadastre uma senha: ");
+		usuario.setSenha(sc.nextLine());
+		
+		usuario.obterDadosUsuario();
+		
+		
+		sc.close();
+		
+		
+		
 
-        email.changePassword(sc);
-        email.printEmail();
-    }
+	}
+
 }
