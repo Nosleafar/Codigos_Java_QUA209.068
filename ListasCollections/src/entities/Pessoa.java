@@ -4,10 +4,7 @@ public class Pessoa implements Comparable<Pessoa>{
 	
 	private String nome;
 	private int idade;
-	
-	
-	
-	
+
 	public Pessoa(String nome) {
 		super();
 		this.nome = nome;
