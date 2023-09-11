@@ -30,6 +30,15 @@ public class Program {
 		
 		System.out.println(func);
 		
+		int [] numeros = new int [5];
+		int cont = 10;
+		for(int i = 0; i <5; i++);{
+			System.out.println("Digite sua altura: ");
+			numeros [i] = cont++;
+		}	
+		for (int n : numeros) {
+			System.out.println(n);
+		}
 	}
 
 }
