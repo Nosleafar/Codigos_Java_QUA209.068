@@ -68,6 +68,7 @@ INDEX VERSION 1.131+C:\Users\Aluno Tarde\Documents\github_Qua209.068\logica_prog
 2816583739.index
 1402190863.index
 3826459629.index
+1916460924.index
 1973310843.index
 3963350012.index
 1208490581.index
