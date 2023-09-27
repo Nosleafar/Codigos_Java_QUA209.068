@@ -1,5 +1,5 @@
 package entities;
-public class Animal {
+public interface Animal {
 
 	public void fazerSom();
 }
